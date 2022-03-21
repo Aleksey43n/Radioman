@@ -36,7 +36,7 @@ class RadioTest {
     @Test
     public void shouldSetNextChanel1() {
         Radio radio = new Radio();
-        radio.setNextChanel(8);
+        radio.setNextChanel();
         int expected = radio.getCurrentChanel();
         int actual = radio.getCurrentChanel();
         assertEquals(expected, actual);
@@ -45,7 +45,7 @@ class RadioTest {
     @Test
     public void shouldSetNextChanel2() {
         Radio radio = new Radio();
-        radio.setNextChanel(9);
+        radio.setNextChanel();
         int expected = radio.getCurrentChanel();
         int actual = radio.getCurrentChanel();
         assertEquals(expected, actual);
@@ -54,7 +54,7 @@ class RadioTest {
     @Test
     public void shouldSetPrevChanel1() {
         Radio radio = new Radio();
-        radio.setPrevChanel(1);
+        radio.setPrevChanel();
         int expected = radio.getCurrentChanel();
         int actual = radio.getCurrentChanel();
         assertEquals(expected, actual);
@@ -63,7 +63,7 @@ class RadioTest {
     @Test
     public void shouldSetPrevChanel2() {
         Radio radio = new Radio();
-        radio.setPrevChanel(0);
+        radio.setPrevChanel();
         int expected = radio.getCurrentChanel();
         int actual = radio.getCurrentChanel();
         assertEquals(expected, actual);
@@ -100,7 +100,7 @@ class RadioTest {
     @Test
     public void shouldSetReduceVolume1() {
         Radio radio = new Radio();
-        radio.setReduceVolume(1);
+        radio.setReduceVolume();
         int expected = radio.getCurrentVolume();
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
@@ -109,7 +109,7 @@ class RadioTest {
     @Test
     public void shouldSetReduceVolume2() {
         Radio radio = new Radio();
-        radio.setReduceVolume(0);
+        radio.setReduceVolume();
         int expected = radio.getCurrentVolume();
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
@@ -118,7 +118,7 @@ class RadioTest {
     @Test
     public void shouldSetIncreaseVolume1() {
         Radio radio = new Radio();
-        radio.setIncreaseVolume(9);
+        radio.setIncreaseVolume();
         int expected = radio.getCurrentVolume();
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
@@ -127,7 +127,7 @@ class RadioTest {
     @Test
     public void shouldSetIncreaseVolume2() {
         Radio radio = new Radio();
-        radio.setIncreaseVolume(10);
+        radio.setIncreaseVolume();
         int expected = radio.getCurrentVolume();
         int actual = radio.getCurrentVolume();
         assertEquals(expected, actual);
