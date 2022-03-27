@@ -74,13 +74,13 @@ public class Radio {
 
     public void setReduceVolume() {
         if (currentVolume > minVolume) {
-            currentVolume = currentVolume - 1;
+            currentVolume--;
         }
     }
 
     public void setIncreaseVolume() {
         if (currentVolume < maxVolume) {
-            currentVolume = currentVolume + 1;
+            currentVolume++;
         }
     }
 }
